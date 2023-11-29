@@ -55,7 +55,7 @@ function Banner() {
         Your browser does not support the video tag.
       </video>
     )}
-    <div className="content" style={{ position: "absolute", top: 200, left: 0, padding: "0px" }}>
+    <div className="content" style={{ position: "absolute", bottom:5, left: 0, padding: "0px" }}>
       {/* ... (existing code) */}
       <div style={{ float: "right", marginRight: "1px" }}> 
       {/* {isTrailerPlaying && <YouTube videoId={"uYPbbksJxIg"} opts={opts}  />} */}
