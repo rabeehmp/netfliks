@@ -1,55 +1,26 @@
-import React from 'react';
-import './App.css';
-import {useState} from 'react'
+
+import React from 'react'
+import NavBar from './Components/NavBar'
+import {action,originals,horror,comedy, Romance,Documentaries,trending } from './Components/urls'
+import Banner from './Components/Banner/Banner'
+import './App.css'
+import RowPostTV from './Components/RowPost/RowPostTV'
+import RowPostMovie from "./Components/RowPost/RowPostMovie"
 
 function App() {
-  const [toDos,setToDos]=useState([])
-  const [toDo,setToDo] = useState('')
-  return (
-    <div className="app">
-      <div className="mainHeading">
-        <h1>ToDo List</h1>
-      </div>
-      <div className="subHeading">
-        <br />
-        <h2>Whoop, it's Wednesday 🌝 ☕ </h2>
-      </div>
-      <div className="input">
-        <input value={toDo} onChange={(e)=>setToDo(e.target.value)} type="text" placeholder="🖊️ Add item..." />
-        <i onClick={()=>setToDos([...toDos,{id:Date.now(), text: toDo,status:false}])} className="fas fa-plus"></i>
-      </div>
-      <div className="todos">
-        { toDos.map((obj)=>{
+    return (
+     <div className="App">
+       <NavBar/>
+       <Banner/>
+       <RowPostTV url={trending} title='Trending' />
+       <RowPostTV url={originals} title='Netflix Originals' isSmall />
+       <RowPostMovie url={action} title='Action' isSmall />
+       <RowPostMovie url={horror} title='Horror' isSmall />
+       <RowPostMovie url={comedy} title='Comedy' isSmall />
+       <RowPostMovie url={Romance} title='Romance' isSmall />
+       <RowPostMovie url={Documentaries} title='Documentaries' isSmall />
+     </div>
+    );
+  }
 
-     return ( <div className="todo">
-          <div className="left">
-            <input onChange={(e)=>{
-              console.log(e.target.checked, "checckkkkkk")
-              console.log(obj)
-              setToDos(toDos.filter(obj2=>{
-                if(obj2.id===obj.id){
-                  obj2.status=e.target.checked
-                }
-                return obj2
-              }))
-            }}value={obj.status} type="checkbox" name="" id="" />
-            <p>{obj.text}</p>
-          </div>
-          <div className="right">
-            <i className="fas fa-times"></i>
-          </div>
-        </div>)
-        }) }
-
-        {toDos.map((obj)=>{
-          if(obj.status){
-            return(<h1>{obj.text}</h1>)
-          }
-          return null
-        })}
-      </div>
-    </div>
-  );
-}
-
-export default App;
+  export default App;

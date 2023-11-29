@@ -1,0 +1,45 @@
+.raw{
+    margin-left: 20px;
+    background-color: #111 !important;
+    color: #fff; 
+}
+
+.posters{
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden ;
+}
+
+#title {
+    color:"red"
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+.poster {
+    cursor: pointer;
+    max-height: 250px;
+    margin-right: 10px;
+    border-radius: 5px;
+    
+}
+
+.smallPoster{
+    cursor: pointer;
+    max-height: 150px;
+    margin-right: 10px;
+    border-radius: 5px;
+
+}
+.poster:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+
+}
+.smallPoster:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+}
