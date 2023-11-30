@@ -41,11 +41,11 @@ nav a img {
     position: absolute;
     left: 50%;
     top: 50%;
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 70px;
-    width: 450px;
+    width: 350px;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, .75);
+    background: rgba(0, 0, 0, 0.75);
 }
 
 .form-wrapper h2 {
@@ -54,13 +54,13 @@ nav a img {
 }
 
 .form-wrapper form {
-    margin: 25px 0 65px;
+    margin: 30px 0 65px;
 }
 
 form .form-control {
     height: 50px;
     position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .form-control input {
@@ -69,10 +69,10 @@ form .form-control {
     background: #333;
     border: none;
     outline: none;
-    border-radius: 4px;
+    border-radius: 40px;
     color: #fff;
     font-size: 1rem;
-    padding: 0 20px;
+    padding: 0 0px;
 }
 
 .form-control input:is(:focus, :valid) {
@@ -97,13 +97,13 @@ form .form-control {
 }
 
 form button {
-    width: 100%;
+    width: 350px;
     padding: 16px 0;
     font-size: 1rem;
-    background: #e50914;
+    background: #e50914ad;
     color: #fff;
     font-weight: 500;
-    border-radius: 4px;
+    border-radius: 40px;
     border: none;
     outline: none;
     margin: 25px 0 10px;
@@ -112,7 +112,7 @@ form button {
 }
 
 form button:hover {
-    background: #c40812;
+    background: #ff000d;
 }
 
 .form-wrapper a {
