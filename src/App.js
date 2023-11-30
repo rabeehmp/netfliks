@@ -27,7 +27,6 @@ function BrowsePage() {
             <NavBar />
             <Banner />
             <RowPostTV url={trending} title='Trending' />
-            <RowPostTV url={trending} title='Trending' />
             <RowPostTV url={originals} title='Netflix Originals' isSmall />
             <RowPostMovie url={action} title='Action' isSmall />
             <RowPostMovie url={horror} title='Horror' isSmall />

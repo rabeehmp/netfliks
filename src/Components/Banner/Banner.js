@@ -55,13 +55,13 @@ function Banner() {
         Your browser does not support the video tag.
       </video>
     )}
-    <div className="content" style={{ position: "absolute", bottom:5, left: 0, padding: "0px" }}>
+    <div className="content" style={{ position: "absolute", left: 0, padding: "0px" }}>
       {/* ... (existing code) */}
       <div style={{ float: "right", marginRight: "1px" }}> 
       {/* {isTrailerPlaying && <YouTube videoId={"uYPbbksJxIg"} opts={opts}  />} */}
       {isTrailerPlay && <YouTube videoId={"GV3HUDMQ-F8"} opts={opts}  />}
       </div>
-      <div className="content">
+      <div className="content" style={{width:"400px"}}>
         <h1 className="title"> {movie ? movie.title : ""}</h1>
         <div className="banner_buttons">
           <button className="button" onClick={()=> playTrailer()}>Play</button>

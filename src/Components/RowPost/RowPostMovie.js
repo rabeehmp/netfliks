@@ -69,7 +69,7 @@ function RowPostMovie(props) {
       className="row"
       style={{
         backgroundColor: "#111",
-        
+        width:"100vw",  
         color: "#fff",
       }}
     >

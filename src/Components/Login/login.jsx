@@ -3,6 +3,7 @@ import "./Login.css";
 
 function SignInForm() {
     return (
+        <div className="base-container">
         <div className="form-wrapper">
             <h2>Sign In</h2>
             <form action="#">
@@ -28,6 +29,7 @@ function SignInForm() {
                 This page is protected by Google reCAPTCHA to ensure you're not a bot.{' '}
                 <a href="#">Learn more.</a>
             </small>
+        </div>
         </div>
     );
 }
