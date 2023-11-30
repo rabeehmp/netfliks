@@ -71,6 +71,7 @@ function RowPostTV(props) {
         backgroundColor: "#111",
         color: "#fff",
         paddingBlock:"2rem",
+        width:"100vw"
       }}
     >
       <h2
