@@ -62,12 +62,12 @@ function Banner() {
       {isTrailerPlay && <YouTube videoId={"GV3HUDMQ-F8"} opts={opts}  />}
       </div>
       <div className="content" style={{width:"400px"}}>
-        <h1 className="title"> {movie ? movie.title : ""}</h1>
+        <h1 className="title"> {movie ? "Oppenheimer" : ""}</h1>
         <div className="banner_buttons">
           <button className="button" onClick={()=> playTrailer()}>Play</button>
           <button className="button" onClick={()=> playTraile()}>My list</button>
         </div>
-        <h1 className="discription">{movie ? movie.overview : ""}</h1>
+        <h1 className="discription">{movie ? "J. Robert Oppenheimer was an American theoretical physicist. He was director of the Manhattan Project's Los Alamos Laboratory during World War II and is often called the Father of the atomic bomb." : "" }</h1>
        
       </div>
       <div className="fade_bottom"></div>
